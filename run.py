@@ -10,7 +10,7 @@ def sleep(nap):
     x = int(nap * 10)
     for i in range(x):
         time.sleep(0.1)
-        print(".", end="")
+        print(".", end="", file=sys.stderr)
     print()
 
 print("start!")
